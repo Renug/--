@@ -1,0 +1,31 @@
+!!=============================================================================
+!! 设置 Xftp.dpi(字体分辨率）
+!!=============================================================================
+Xft.dpi:96
+!!=============================================================================
+!! RXVT-unicode setting
+!!=============================================================================
+!urxvt setting
+!URxvt.geometry:80x36+80+80
+URxvt.background:      black
+URxvt.foreground:      white
+URxvt.colorBD:         yellow
+URxvt.colorUL:         green
+URxvt.scrollBar:         False   
+URxvt.scrollBar_right:      True
+URxvt.scrollstyle:      next
+!set the artificial transparency of the v.t.
+URxvt.inheritPixmap:      False
+URxvt.shading:         500
+URxvt.saveLines:      1500
+URxvt.color4:         RoyalBlue4
+URxvt.color12:         SkyBlue2
+URxvt.tintColor:      Grey25
+URxvt.preeditType:      Root
+URxvt.borderLess:      False
+URxvt.title:         rannger
+!URxvt.font:xft:DejaVu Sans Mono:pixelsize=12:antialias=False, \
+!xft:wenquanyi bitmap song:pixelsize=12:antialias=False
+
+URxvt.font:xft:Dejavu Sans Mono:size=10:antialias=True,\
+xft:WenQuanYi Zen Hei Mono:size=10:antialias=True
