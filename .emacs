@@ -97,8 +97,8 @@
 (holiday-float 2 0 4 "老妈生日")
 (holiday-float 4 0 5 "老爸生日")
 ))
-(require 'color-theme)
-(color-theme-comidia)
+;(require 'color-theme)
+;(color-theme-comidia)
 
 ;(set-default-font "consolas:15")
 ;; 默认的日记文件
@@ -109,7 +109,7 @@
 (global-set-key [f9] 'kill-buffer)
 ;CONTRL+SPACE键去掉，把MARK SET设置成别的F2键。
 ;(global-set-key [(f2)] 'set-mark-command)
-(global-set-key (kbd "C-c C-m") 'set-mark-command)
+(global-set-key (kbd "C-,") 'set-mark-command)
 ;(global-set-key (kbd "C-c C-s") 'set-mark-command)
 ;设置F11快捷键指定 的日历系统
 (global-set-key [f11] 'calendar)
@@ -283,3 +283,9 @@ that was stored with ska-point-to-register."
       '((java-mode . "java") (awk-mode . "awk") (other . "linux")))
 ; 下面调整Tab键缩进为4个空格
 (setq c-basic-offset 4)
+
+(setq slime-net-coding-system 'utf-8-unix)
+(setq inferior-lisp-program "/usr/local/bin/sbcl")
+;(setq inferior-lisp-program "/usr/bin/clisp")
+;(slime-setup)
+(slime-setup '(slime-fancy))
